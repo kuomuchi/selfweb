@@ -1,0 +1,100 @@
+a{
+  text-decoration: none;
+}
+
+#header{
+  margin: -10px;
+  display: flex; 
+  height: 100px;
+  background-color: #ccc;
+  justify-content:space-around;
+  
+  min-width: 400px;
+  
+}
+
+#logo{
+  margin-top: 10px;
+}
+
+#logo-image{
+  width: 80px;
+}
+
+
+#menu{
+  display: flex;
+  align-items: center; 
+}
+
+#menu > a{
+  color: black;
+}
+
+.page-item{
+  border-right: 1px solid;
+  font-size: 24px;
+  height: 40px;
+  padding: 0 12px 0 12px;
+}
+
+/* 以下是內文 */
+.page-body{
+  margin: -10px;
+  margin-top: 10px;
+  min-height: 500px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  
+  background-color: red;
+  padding: 30px;
+}
+
+.item_box{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+    
+}
+
+.input_box, list_box{
+  
+  display: flex;
+  flex-direction: column;
+  
+  
+  width: 200px;
+  padding: 0px 30px 30px 30px;
+  margin: 10px;
+  background-color: pink;
+}
+
+#summit_date{
+  margin-top: 6px;
+  height: 30px;
+  
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 380px;
+  max-width: 550px;
+  
+  padding-bottom: 90px;
+  border-bottom: 2px #ccc solid;
+}
+
+.page-content{
+  padding-top: 12px;
+}
+
+#sponsor{
+  display: flex;
+  padding: 5px;
+  justify-content:space-between;
+}
