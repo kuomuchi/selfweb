@@ -1,6 +1,6 @@
 console.log("Login")
 
-console.log(location.host + '/api/data')
+console.log(location.origin + '/api/data')
 
 // 抓取所有課程資料
 const profileData = new Promise((resolve, reject) => {
