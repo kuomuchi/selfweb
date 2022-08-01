@@ -4,7 +4,7 @@ console.log(location.origin + '/api/data')
 
 // 抓取所有課程資料
 const profileData = new Promise((resolve, reject) => {
-  fetch('http://'+location.host + '/api/data', {method:'GET'}).then( res => {
+  fetch(location.origin+ '/api/data', {method:'GET'}).then( res => {
     resolve(res.json())
   }).catch( error =>{
     console.log('data error')
