@@ -39,7 +39,7 @@ a{
 }
 
 /* 以下是內文 */
-.page-body{
+#page-body{
   margin: -10px;
   margin-top: 10px;
   min-height: 500px;
