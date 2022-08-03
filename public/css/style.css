@@ -6,7 +6,7 @@ a{
   margin: -10px;
   display: flex; 
   height: 100px;
-  background-color: #ccc;
+  background-color: #2470a0;
   justify-content:space-around;
   
   min-width: 400px;
@@ -18,7 +18,7 @@ a{
 }
 
 #logo-image{
-  width: 80px;
+  width: 45px;
 }
 
 
@@ -49,7 +49,7 @@ a{
   justify-content:space-around;
   align-items: center;
   
-  background-color: red;
+  background-color: white;
   padding: 30px;
 }
 
