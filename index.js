@@ -14,22 +14,23 @@ app.use(express.urlencoded({extended:true}));
 
 
 
-
+// API
 app.use('/api/',
     [
         require('./server/routes/get_route')
     ]
 );
 
+// 404 page
 app.use(function(req, res, next) {
     res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
 // // Error handling
-// app.use(function(err, req, res, next) {
-//     console.log(err);
-//     res.status(500).send('Internal Server Error');
-// });
+app.use(function(err, req, res, next) {
+    console.log(err);
+    res.status(500).send('Internal Server Error');
+});
 
 if (NODE_ENV != 'production'){
     app.listen(port, () => {console.log(`Listening on port: ${port}`);});
