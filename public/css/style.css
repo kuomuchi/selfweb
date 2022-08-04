@@ -38,6 +38,63 @@ a{
   padding: 0 12px 0 12px;
 }
 
+
+.homepage{
+  transition-duration: 0.5s;
+  background-color: #ccc;
+  width: 100%;
+  min-height: 300px;
+  height: 500px;
+
+  display: flex;
+}
+
+.homepage-title{
+  transition-duration: 0.5s;
+  background-color: greenyellow;
+}
+
+.homepage-title > p{
+  color: greenyellow;
+}
+
+.homepage > a{
+  position: absolute;
+
+  color: black;
+  height: 20px;
+  font-size: 10px;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homepage-title:hover{
+  background-color: black;
+}
+
+#homepage-image{
+  position: absolute;
+  height: 300px;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.funny-body{
+  border: black 3px double;
+  display: flex;
+}
+
+.funny-body > div{
+  margin-left: 10px;
+  border: black 1px solid;
+  background-color: #eee;
+  padding: 1px;
+  cursor: pointer;
+}
+
 /* 查詢 */
 .select-box{
   
@@ -59,7 +116,7 @@ a{
   width: 100px;
 }
 
-/* 以下是內文 */
+/* 以下是學習歷程的內文 */
 #page-body{
   margin: -10px;
   margin-top: 10px;

@@ -1,0 +1,11 @@
+#homepage-image{
+  animation: updownMove 8s infinite;
+}
+
+@keyframes updownMove {
+  0% {top: 50%}
+  25% {top: 60%}
+  50% {top: 50%}
+  75% {top: 30%}
+  100% {top: 50%}
+}
