@@ -34,6 +34,7 @@ profileData.then(data => {
     newitem.innerHTML = "<div class='page-title'> \
     <h1>"+ profile.title +"</h1> \
     <p>" + profile.time_date +"</p> \
+    <p>類型: " + profile.type +"</p> \
     </div>"+ imageElement +"<div class=page-content>"+ profile.directions +"</div>"
 
     outSidsElm.appendChild(newitem)
