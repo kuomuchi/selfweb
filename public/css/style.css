@@ -38,6 +38,27 @@ a{
   padding: 0 12px 0 12px;
 }
 
+/* 查詢 */
+.select-box{
+  
+  padding-top: 40px;
+  margin-bottom: -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.select{
+  margin-left: 5px;
+}
+
+#select-input{
+  width: 250px;
+}
+
+#select-self{
+  width: 100px;
+}
+
 /* 以下是內文 */
 #page-body{
   margin: -10px;
