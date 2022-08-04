@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Muchi web</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/add.css">
     <link rel="icon" href="./logo/kuoLogo.png" type="image/x-icon">
 
   </head>
@@ -43,23 +43,59 @@
   </div>
   
   
-<!--   內文 -->
+<!-- 修改 -->
+  
   <div id='page-body'>
-    
-    <div class='item_box'>
-      
-      <div class='input_box'>
-        <p>標題</p>
-        <input type="text">
-        <p>文字</p>
-        <input type="description">
-        <p>圖片上傳</p>
-        <input type="file" accept="image/gif, image/jpeg, image/png">
-        <button id='summit_date'>上傳</button>
+
+    <div id='page-box'>
+
+      <!-- 調整 -->
+      <div></div>
+      <!-- 調整 -->
+      <div class='select-box'>
+
+        <div class='msg-item-title'>
+          <div>標題</div>
+          <div>時間</div>
+          <div>類型</div>
+        </div>
+
+        <!-- <div class='msg-item'>
+          <div>標題</div>
+          <div>時間</div>
+          <div>類型</div>
+        </div> -->
+
       </div>
       
+      <div class='edit-box'>
+        <b>標題</b>
+        <input type="text" id='title-edit'>
+        <b>時間</b>
+        <input type="text" id='time-edit'>
+        <b>類型</b>
+        <select class='select' id='type-edit'>
+          <option>領域學習</option>
+          <option>職場實習</option>
+          <option>嗜好社團</option>
+          <option>運動賽事</option>
+        </select>
+        
+        <b>說明</b>
+        <textarea id="directions-edit" cols="65" rows="9"></textarea>
+
+        <div class='button-box'>
+          <button id='edit'>修改</button>
+          <button id='reset'>重置</button>
+        </div>
+
+      </div>
+
+      <!-- 調整 -->
+      <div></div>
+      <!-- 調整 -->
+
     </div>
-    
     
   </div>
   
@@ -69,5 +105,7 @@
     <p>此網站由 Muchi 製作:D</p>
     <p>沒有美術天份</p>
   </div>
+
+  <script type="text/javascript" src="./js/add.js"></script>
   
 </html>
