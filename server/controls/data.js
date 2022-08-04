@@ -5,7 +5,7 @@ const {
 
 const getData = async (req, res) => {
 
-	console.log(req.query) //獲得後方參數
+	// console.log(req.query) //獲得後方參數
 
 	//keyword input輸入
 	//type 類型
