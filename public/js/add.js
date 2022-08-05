@@ -15,7 +15,6 @@ const profileData = new Promise((resolve, reject) => {
 // 開始抓取、建立資料至前端
 const catchData = data => {
 
-  console.log(data)
   for(let time = 0; time < data.length; time++){
     let profile =  data[time]
     
@@ -62,5 +61,34 @@ document.getElementById('reset').addEventListener('click', () => {
   document.getElementById('title-edit').value = ''
   document.getElementById('time-edit').value = ''
   document.getElementById('directions-edit').value = ''
+
+  selectId = 'new'
   
 })
+
+
+
+// 成功拿取
+async function patchData(){
+
+  console.log('test')
+  const boay = {body:1}
+
+  await fetch(location.origin + '/api/data', {
+  	method: 'PATCH',
+  	body: JSON.stringify({
+      title: 'foo',
+    }),
+  	headers: {'Content-Type': 'application/json'}
+  }).then( async res => {
+
+    console.log( await res.text())
+
+  }).catch( error => {
+    console.log(error)
+    return error
+  })
+  
+}
+
+patchData()

@@ -6,7 +6,6 @@ const {
 const getData = async (req, res) => {
 
 	// console.log(req.query) //獲得後方參數
-
 	//keyword input輸入
 	//type 類型
 
@@ -33,6 +32,24 @@ const getData = async (req, res) => {
 	
 }
 
+
+const patchData = async (req, res) => {
+
+	console.log(req.body)
+	
+	// const sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND  (title Like '" + keyword +"') OR (directions like'"+ keyword +"');"
+	// const data = await query(sql)
+
+	const tes = {
+		yes: 1
+	}
+
+	res.json(tes)
+	
+	
+}
+
+
 const test = async (req, res) => {
 
 	console.log(req.body)
@@ -44,5 +61,6 @@ const test = async (req, res) => {
 
 module.exports = {
 	getData,
+	patchData,
 	test
 };
