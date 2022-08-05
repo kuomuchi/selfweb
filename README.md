@@ -25,10 +25,11 @@
 這時完成了基本的 API 架構，很久沒有使用 Fetch 來 call 資料，花了一點時間成功讓前端、後端可以相通。
 
 ### API
-
+```
 href: [HOSTNAME]/api/data/?keyword=""&type=""
 Method: GET
 Description: 取得學習歷程
+```
 
 | Field      | Type   | Description                                            |
 |:---------- | ------ |:------------------------------------------------------ |
