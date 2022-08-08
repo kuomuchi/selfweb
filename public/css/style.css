@@ -2,14 +2,22 @@ a{
   text-decoration: none;
 }
 
+body{
+  margin: 0;
+}
+
 #header{
-  margin: -10px;
   display: flex; 
   height: 120px;
+  width: 100%;
+
   background-color: #2470a0;
   justify-content:space-around;
+
+  box-shadow: 2px 2px 2px 2px black;
+  z-index: 1;
+
   
-  min-width: 400px;
 }
 
 #logo{
@@ -35,6 +43,33 @@ a{
   font-size: 24px;
   height: 40px;
   padding: 0 12px 0 12px;
+}
+
+/* 首頁 */
+
+.homepage{
+  display: flex;
+
+  height: 600px;
+  background-color: yellow;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.homepage-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+
+  padding: 10px;
+  border: black 3px solid
+}
+
+.landingpage{
+  display: flex;
+  
 }
 
 
