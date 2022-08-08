@@ -24,7 +24,9 @@ const getData = async (req, res) => {
 		type = "%" + type + "%"
 	}
 
-	const sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND  (title Like '" + keyword +"') OR (directions like'"+ keyword +"');"
+	const sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND ( (title Like '" + keyword +"') OR (directions like'"+ keyword +"'));"
+
+	// console.log(sql)
 	const data = await query(sql)
 
 	res.json(data)

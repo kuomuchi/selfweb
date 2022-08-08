@@ -16,6 +16,8 @@ const profileData = new Promise((resolve, reject) => {
 
 // 開始抓取、建立資料至前端
 const catchData = data => {
+
+  console.log(data)
   for(let time = 0; time < data.length; time++){
     let profile =  data[time]
     
