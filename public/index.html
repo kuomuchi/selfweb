@@ -5,69 +5,83 @@
     <title>Muchi web</title>
     <link rel="icon" href="./logo/kuoLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/bootstrap_page.css">
   </head>
     
-  <!--   標題 -->
-    <div id='header'>
-      <div id='logo'>
-        <a href="/">
-          <img id='logo-image' src="./logo/kuoLogo.png">
-        </a>
-        
-      </div>
+  <div id='header'>
+    <div id='logo'>
+      <a href="/">
+        <img id='logo-image' src="./logo/kuoLogo.png">
+      </a>
       
-      <div id='menu'>
-        <a href="/">
-          <div class='page-item'>首頁</div>
-        </a>
-        
-        <a href="/selfLearn.html">
-          <div class='page-item'>學習歷程</div>
-        </a>
-        
-        <a href="/lifeNote.html">
-          <div class='page-item'>生活筆記</div>
-        </a>
-
-        <a href="./about.html">
-            <div class='page-item'>About</div>
-          </a>
-
-        <a href="">
-          <div class='page-item'>Other</div>
-        </a>
-        
-      </div>  
     </div>
+    
+    <div id='menu'>
+      <a href="/">
+        <div class='page-item'>首頁</div>
+      </a>
+      
+      <a href="/selfLearn.html">
+        <div class='page-item'>學習歷程</div>
+      </a>
+      
+      <a href="/lifeNote.html">
+        <div class='page-item'>生活筆記</div>
+      </a>
 
-    <!-- 首頁的內容 -->
-    <div class='homepage'>
-        <div class='homepage-title'>
-            <h1>這是首頁喔<3</h1>
-            <p>這是隱藏文字 :D<br>首頁代表了網站創作者本人，為了展現我的幽默！<br>我在這個首頁裡面藏了8個彩蛋！！<br><br>祝你找到:D<br><br>到處點點看、摸摸看 :D</p>
-        </div>
+      <a href="./about.html">
+          <div class='page-item'>About</div>
+      </a>
 
-        <a href="https://youtu.be/dQw4w9WgXcQ" class="troll-link" target="_blank" >don't click me</a>
+      <a href="">
+        <div class='page-item'>Other</div>
+      </a>
+      
+    </div>  
+  </div>
 
-        <img id='homepage-image' src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg">
-    </div>
 
-    <div class=funny-body>
-        <input type="text" id='weird-input'>
-        <button id='weird-button'>奇怪的按鈕 :D</button>
-        <div id='bad-div'>我是Div tag不要按我!</div>
-    </div>
+  <!-- 首頁的內容 -->
+  
+  <!-- Masthead-->
+  <header class="masthead">
+      <div class="container px-4 px-lg-5 h-100">
+          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-8 align-self-end">
+                  <h1 class="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1>
+                  <hr class="divider">
+              </div>
+              <div class="col-lg-8 align-self-baseline">
+                  <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                  <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- About-->
+  <section class="page-section bg-primary" id="about">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-lg-8 text-center">
+                  <h2 class="text-white mt-0">We've got what you need!</h2>
+                  <hr class="divider divider-light" />
+                  <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                  <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+              </div>
+          </div>
+      </div>
+  </section>
+    
 
     
     
-  <!--   底部 -->
-    <div id='sponsor'>
-      <p>此網站由 Muchi 製作:D</p>
-      <p>沒有美術天份</p>
-    </div>
+    <!--   底部 -->
+  <div id='sponsor'>
+    <p>此網站由 Muchi 製作:D</p>
+    <p>沒有美術天份</p>
+  </div>
 
-    <script type="text/javascript" src="./js/home.js"></script>
+  <script type="text/javascript" src="./js/home.js"></script>
     
 </html>
 <!-- partial -->
