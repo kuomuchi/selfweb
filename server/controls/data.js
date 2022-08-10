@@ -37,18 +37,53 @@ const getData = async (req, res) => {
 
 const patchData = async (req, res) => {
 
-	console.log(req.body)
-	
-	// const sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND  (title Like '" + keyword +"') OR (directions like'"+ keyword +"');"
-	// const data = await query(sql)
+	// console.log(req.body)
 
-	const tes = {
-		yes: 1
+	const {
+		id,
+		time_data,
+		title,
+		type,
+		image,
+		directions,
+		newId
+		
+	} = req.body.data
+
+
+	let sql
+
+	if(id != 'new'){
+		sql = "UPDATE `selfweb`.`learn_process` SET `title` = '"+ title +"', `image` = '"+ image +"', `time_date` = '"+ time_data +"', `type` = '"+ type +"',`directions` = '"+ directions +"' WHERE (`id` = '"+ id +"');"
+	}else{
+		sql = "INSERT INTO `selfweb`.`learn_process` (`id` ,`title`, `image`, `directions`, `type`, `time_date`) VALUES ('"+newId+"', '"+title+"', '"+image+"', '"+directions+"', '"+type+"', '"+time_data+"');"
 	}
 
-	res.json(tes)
-	
-	
+	await query(sql).then( data => {
+
+		res.send('1')
+
+	}).catch( error => {
+
+		console.log(error)
+		res.send('0')
+
+	})
+}
+
+
+
+const deleteData = async (req, res) => {
+
+	const {id} = req.body
+
+	sql = "DELETE FROM `selfweb`.`learn_process` WHERE (`id` = '"+id+"');"
+	await query(sql).then(()=>{
+		res.send("1")
+	}).catch( error => {
+		res.send("0")
+	})
+
 }
 
 
@@ -64,5 +99,5 @@ const test = async (req, res) => {
 module.exports = {
 	getData,
 	patchData,
-	test
+	deleteData
 };

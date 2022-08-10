@@ -107,7 +107,6 @@ a{
   background-color: #eee;
 }
 
-
 /* 修改 */
 
 .edit-box{
@@ -119,8 +118,12 @@ a{
   margin-top: 15px;
 }
 
-#title-edit, #time-edit, #type-edit, #descript-edit{
+#title-edit, #time-edit, #type-edit, #descript-edit, #img-edit{
   margin-bottom: 25px;
+}
+
+#delete {
+  margin-left: 20px;
 }
 
 
