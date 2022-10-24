@@ -72,27 +72,29 @@
 }
 
 #select{
-  height: 23px;
+  height: 40px;
   width: 200px;
 }
 
 #type{
-  height: 23px;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
 #button{
-  height: 25px;
-  width: 50px;
+  height: 35px;
+  width: 90px;
 }
 
 .main-item{
 
   padding: 5px;
 
-  margin: 10px;
+  margin: 25px;
 
-  width: 150px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
 
   background-color: pink;
   
@@ -111,6 +113,22 @@
     width: 250px;
     height: 350px;
     margin: 15px;
+  }
+
+  #select{
+    height: 23px;
+    width: 200px;
+  }
+  
+  #type{
+    height: 23px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  #button{
+    height: 25px;
+    width: 50px;
   }
   
 }
