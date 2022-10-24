@@ -94,7 +94,7 @@
 
 
 /* 電腦螢幕、平板螢幕 */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 900px){
   .homepage{
     background-color: red;
     height: 800px;
