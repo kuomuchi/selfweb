@@ -1,152 +1,107 @@
-a{
-  text-decoration: none;
-}
-
-body{
+*{
+  padding: 0;
   margin: 0;
+  text-decoration:none;
 }
 
-#header{
-  display: flex; 
-  height: 120px;
-  width: 100%;
+.topbar-box{
+  /* width: 100%; */
 
-  background-color: #2470a0;
-  justify-content:space-around;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: skyblue;
+}
+
+.topbar-item, .logo{
+  width: 50%;
+}
+
+.logo{
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.topbar-item{
+  display: flex;
+  margin: 35px;
+}
+
+.topbar-item > a{
+  padding: 10px;
+  height: 20px;
+  color: black;
+  font-size: 20px;
+
+  font-weight:bold;
+
+  border-left: solid 1.5px black;
   
 }
 
-#logo{
-  margin-top: 10px;
-}
-
-#logo-image{
-  width: 45px;
-}
-
-
-#menu{
-  display: flex;
-  align-items: center; 
-}
-
-#menu > a{
-  color: black;
-}
-
-.page-item{
-  border-right: 1px solid;
-  font-size: 24px;
-  height: 40px;
-  padding: 0 12px 0 12px;
-}
-
-/* 首頁 */
 
 .homepage{
-  display: flex;
+  /* width: 100%; */
+  background-color:#97CBFF;
+  margin: auto;
+  height: 1000px;
 
-  height: 600px;
-  background-color: yellow;
-  background-size: 100% 100%;
-  z-index: -1;
 }
 
-.homepage-title{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
+.container{
+  position: relative;
+  text-align: center;
+  font-size: 23px;
 
-  padding: 10px;
-  border: black 3px solid
-}
-
-.landingpage{
-  display: flex;
+  top: 28%;
   
 }
 
+.title{
+  display: inline-block;
+  border-bottom: 2px solid black;
 
-/* 查詢 */
-.select-box{
-  
-  padding-top: 40px;
-  margin-bottom: -30px;
+}
+
+#about{
+  /* width: 100%; */
   display: flex;
+  background-color: white;
   justify-content: center;
 }
 
-.select{
-  margin-left: 5px;
-}
-
-#select-input{
-  width: 250px;
-}
-
-#select-self{
-  width: 100px;
-}
-
-/* 以下是學習歷程的內文 */
-#page-body{
-  margin: -10px;
-  margin-top: 10px;
-  min-height: 500px;
-  
+.about-box{
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
-  align-items: center;
-  
-  background-color: white;
-  padding: 30px;
+  justify-content: center;
+
+  padding: 120px 50px;
+
 }
 
-.item_box{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
+.about-img{
+  text-align: center;
+
+}
+
+.about-content > p{
+  font-size: 20px;
+}
+
+.about-content > h3{
+  font-size: 40px;
+}
+
+
+/* 電腦螢幕、平板螢幕 */
+@media screen and (min-width: 768px){
+  .homepage{
+    background-color: red;
+    height: 800px;
     
-}
+  }
 
-.input_box, list_box{
-  
-  display: flex;
-  flex-direction: column;
-  
-  
-  width: 200px;
-  padding: 0px 30px 30px 30px;
-  margin: 10px;
-  background-color: pink;
-}
-
-#summit_date{
-  margin-top: 6px;
-  height: 30px;
-  
-}
-
-.page{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-width: 380px;
-  max-width: 550px;
-  
-  padding-bottom: 90px;
-  border-bottom: 2px #ccc solid;
-}
-
-.page-content{
-  padding-top: 12px;
-}
-
-#sponsor{
-  display: flex;
-  padding: 5px;
-  justify-content:space-between;
+  .container{
+    font-size: 40px;
+  }
 }

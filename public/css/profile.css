@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+}
+
+.topbar-box{
+  /* width: 100%; */
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: skyblue;
+}
+
+.topbar-item, .logo{
+  width: 50%;
+}
+
+.logo{
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.topbar-item{
+  display: flex;
+  margin: 35px;
+}
+
+.topbar-item > a{
+  padding: 10px;
+  height: 20px;
+  color: black;
+  font-size: 20px;
+
+  font-weight:bold;
+
+  border-left: solid 1.5px black;
+  
+}
+
+.main{
+  display: flex;
+  padding: 50px 20px 50px 30px;
+
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+
+.main-box{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  /* align-content: flex-start; */
+  
+  /* width: 768px; */
+  /* height: 1000px; */
+  
+}
+
+
+.main-selct{
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#select{
+  height: 23px;
+  width: 200px;
+}
+
+#type{
+  height: 23px;
+}
+
+#button{
+  height: 25px;
+  width: 50px;
+}
+
+.main-item{
+
+  padding: 5px;
+
+  margin: 10px;
+
+  width: 150px;
+  height: 250px;
+
+  background-color: pink;
+  
+  color: black;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+/* 電腦螢幕、平板螢幕 */
+@media screen and (min-width: 768px){
+
+  .main-item{
+    width: 250px;
+    height: 350px;
+    margin: 15px;
+  }
+  
+}
