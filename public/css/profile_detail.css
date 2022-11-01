@@ -1,0 +1,33 @@
+.main_box{
+  
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  padding: 30px;
+
+}
+
+.main_deatil{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.main_deatil > h3, .main_deatil > img {
+  margin-top: 25px;
+}
+
+
+
+/* 電腦螢幕、平板螢幕 */
+@media screen and (min-width: 1100px){
+
+  .main_deatil{
+    
+    width: 500px;
+  }
+
+  
+  
+}
