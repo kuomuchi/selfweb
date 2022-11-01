@@ -18,14 +18,21 @@
   margin-top: 25px;
 }
 
+.main_deatil > h1 {
+  font-size: 50px;
+}
+
 
 
 /* 電腦螢幕、平板螢幕 */
 @media screen and (min-width: 1100px){
 
   .main_deatil{
-    
     width: 500px;
+  }
+
+  .main_deatil > h1 {
+    font-size: 32px;
   }
 
   
