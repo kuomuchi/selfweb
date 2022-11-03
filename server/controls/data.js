@@ -11,6 +11,10 @@ const getData = async (req, res) => {
 
 	let keyword = req.query.keyword
 	let type = req.query.type
+	let id = req.query.id
+	let sql = ""
+
+
 
 	if(!keyword){
 		keyword = "%%"
@@ -24,11 +28,14 @@ const getData = async (req, res) => {
 		type = "%" + type + "%"
 	}
 
-	const sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND ( (title Like '" + keyword +"') OR (directions like'"+ keyword +"'));"
+	sql = "SELECT * FROM selfweb.learn_process WHERE (type Like '"+ type +"') AND ( (title Like '" + keyword +"') OR (directions like'"+ keyword +"'));"
 
-	// console.log(sql)
+	if(id){
+		sql = 'SELECT * FROM selfweb.learn_process where id = "'+ id +'"';
+	}
+	
+	
 	const data = await query(sql)
-
 	res.json(data)
 	
 	
