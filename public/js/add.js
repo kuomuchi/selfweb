@@ -177,6 +177,3 @@ document.getElementById("delete").addEventListener('click', async () => {
   }
 
 })
-
-
-
