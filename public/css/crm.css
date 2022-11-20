@@ -4,7 +4,6 @@
 
   flex-direction: column;
   justify-content: center;
-
   
 }
 
@@ -22,57 +21,60 @@
   
 }
 
+.page-box{
+  overflow: scroll;
+}
 
-.main-selct{
-  margin-bottom: 20px;
+.page-box, .edit-box{
+  width: 45%;
+  height: 500px;
+  background-color: red;
+  padding: 10px;
+}
 
+.page-name{
+  width: 40%
+}
+
+.page-type, .page-time{
+  width: 30%
+}
+
+
+.page-item{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
 
+  margin-top: 15px;
+  font-size: 25px;
 }
 
-#select{
-  height: 40px;
-  width: 200px;
+.page-title{
+  margin-top: 0px;
 }
 
-#type{
-  height: 50px;
-  width: 90px;
-  margin-right: 20px;
-  margin-left: 5px;
+.edit-box > input, .edit-box > textarea, .edit-box > select{
+  font-size: 25px;
 }
 
-#button{
-  height: 35px;
-  width: 90px;
+#edit-image{
+  width: 90%;
 }
 
-.main-item{
+#edit-directions{
+  height: 150px;
+  width: 90%;
+}
 
-  transition-duration: 0.2s;
-
-  padding: 15px 15px 35px 15px;
-
-  margin: 25px;
-
-  width: 550px;
-  /* height: 790px; */
-
+#save, #delete{
+  font-size: 20px;
+  padding: 2px;
   background-color: pink;
-  
-  color: black;
-  display: flex;
-  flex-direction: column;
-
-  font-size: 30px;
+  width: auto;
 }
 
-
-.main-item:hover{
-  box-shadow: 10px 10px 50px #ddd;
-}
 
 
 
