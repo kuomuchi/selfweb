@@ -30,7 +30,7 @@ function createProfilePage(data){
     //create data to front-end
     const newitem = document.createElement('a')
     newitem.className = 'main-item'
-    newitem.href = "http://localhost:3000/profile_detail.html?id=" + profile.id
+    newitem.href = location.origin + "/profile_detail.html?id=" + profile.id
     
 
     let imageTrue = profile.image
