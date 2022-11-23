@@ -82,7 +82,7 @@
 /* 電腦螢幕、平板螢幕 */
 @media only screen and (min-width: 1100px) {
   .homepage{
-    background-color: red;
+    background-color: var(--sage);
     height: 800px;
     
   }
