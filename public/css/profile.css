@@ -60,7 +60,8 @@
   width: 550px;
   /* height: 790px; */
 
-  background-color: pink;
+  background-color: var(--babypowder);
+  border: 2px solid var(--text-color);
   
   color: black;
   display: flex;

@@ -1,13 +1,24 @@
+:root {
+  --text-color: rgb(0, 0, 0);
+  --bar-color: rgb(230, 170, 206);
+  --babypowder:rgb(240, 244, 239);
+  --sage:rgb(191, 204, 148);
+  --start-command-blue:rgb(0, 119, 182);
+
+  /* https://coolors.co/000000-e6aace-f0f4ef-bfcc94-0077b6 */
+}
+
 *{
   padding: 0;
   margin: 0;
   text-decoration:none;
 }
 
+
 .topbar-box{
   display: flex;
   justify-content: space-between;
-  background-color: pink;
+  background-color: var(--bar-color);
 
   /* rds */
   height: 200px;
@@ -45,15 +56,15 @@
   margin: 35px;
 }
 
+
+
 .topbar-item > a{
   
   /* transition-duration: 0.1s; */
 
   padding: 10px;
-  color: black;
-  font-weight:bold;
-  border-left: solid 1.5px black;
-
+  border-left: solid 1.5px var(--text-color);
+  color: var(--text-color);
 
   /* rds */
   height: 35px;
