@@ -6,9 +6,10 @@
 
   background: url(../image/bg-home.jpg);
   background-repeat: no-repeat;
-  background-attachment:fixed;
   background-position:center;
   background-size: cover;
+
+  background-attachment:fixed;
 
 }
 
@@ -84,7 +85,19 @@
   .homepage{
     background-color: var(--babypowder);
     height: 800px;
+
+
+    /* 黑科技 */
+    background-position: -99999px -99999px;
     
+  }
+
+  .homepage::before{
+    background-image: inherit; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
   }
 
   .title-box{
