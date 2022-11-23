@@ -52,34 +52,6 @@ function createProfilePage(data){
     <p>" + profile.time_date +"</p>\
     <p>" + profile.type +"</p>"
 
-
-    // <img src="https://fakeimg.pl/150x150/">
-    // <h2>標題dsasd</h2>
-    // <p>類別</p>
-    // <p>2022/04/01</p>
-    // <p>說明qewkrewkq</p>
-
-
-
-    // newitem.addEventListener('click', ()=>{
-
-    //   selectId = profile.id
-
-    //   let content = profile.directions
-    //   document.getElementById('title-edit').value = profile.title
-    //   document.getElementById('time-edit').value = profile.time_date
-    //   document.getElementById('type-edit').value = profile.type
-    //   document.getElementById('img-edit').value = profile.image
-
-    //   content = content.replaceAll('<br>', "\n");
-
-    //   document.getElementById('directions-edit').value = content
-
-    //   content = content.replaceAll('\n', "<br>");
-    //   descriptContent = content
-
-    // })
-
     outSidsElm.appendChild(newitem)
   }
 

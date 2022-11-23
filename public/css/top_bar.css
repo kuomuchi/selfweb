@@ -65,6 +65,7 @@
   padding: 10px;
   border-left: solid 1.5px var(--text-color);
   color: var(--text-color);
+  font-weight: bold;
 
   /* rds */
   height: 35px;
