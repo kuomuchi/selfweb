@@ -57,7 +57,7 @@
 }
 
 #backtop > img{
-  width: 40px;
+  width: 85px;
 }
 
 .main_otherdetail{
@@ -96,10 +96,8 @@
     font-size: 32px;
   }
 
-  #back_to img{
+  #backtop > img{
     width: 50px;
   }
-
-  
   
 }

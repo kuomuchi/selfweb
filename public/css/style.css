@@ -4,7 +4,7 @@
   margin: auto;
   height: 1600px;
 
-  background: url(../image/bg-home-phone.jpg);
+  background: url(../image/food/bg-n-phone.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
@@ -84,7 +84,7 @@
 @media only screen and (min-width: 1100px) {
   .homepage{
     background-color: var(--babypowder);
-    background: url(../image/bg-home.jpg);
+    background: url(../image/food/bg-n.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
